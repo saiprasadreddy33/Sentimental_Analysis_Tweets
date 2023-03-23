@@ -1,4 +1,4 @@
-Naive Bayes Classifier for Sentiment Analysis
+***Naive Bayes Classifier for Sentiment Analysis***
 
 This is a Python implementation of a Naive Bayes Classifier for sentiment analysis, which is the task of determining whether a piece of text expresses a positive or negative sentiment. The implementation uses the Naive Bayes algorithm from the nltk package, and the training data is read from text files.
 
@@ -25,24 +25,26 @@ pip install numpy
 
 Running the code
 
-To run the code, simply execute the sentiment_analysis.py file:
+To run the code, simply execute the main.py file:
 
 python sentiment_analysis.py
 
 This will train the classifier on the training data, and then test it on the test data. The accuracy of the classifier will be printed to the console.
-Code Structure
 
-The code consists of several functions and a main script.
-Functions
+Installation
 
-    get_words_in_tweets(tweets): this function takes a list of tweets and returns a list of all the words in the tweets.
+    Clone the repository: git clone https://github.com/username/sentiment-analysis.git
+    Install the required packages: pip install -r requirements.txt
+    Run the main script: python main.py
 
-    get_word_features(wordlist): this function takes a list of words and returns a list of the most frequent words in the list.
+Usage
 
-    read_tweets(fname, t_type): this function reads in a file containing tweets and their associated sentiment, and returns a list of tuples containing the tweet text and sentiment.
+To use this code for sentiment analysis on your own set of tweets, follow these steps:
 
-    extract_features(document): this function takes a list of words and returns a dictionary containing the features of the document.
+    Create two text files: positive.txt and negative.txt.
+    In each file, add your positive and negative tweets, one tweet per line.
+    Run the main script: python main.py
 
-    classify_tweet(tweet): this function takes a single tweet and returns its sentiment as either 'positive' or 'negative'.
+The classifier will classify the tweets in positive.txt and negative.txt, and will output the total accuracy of the classifier on a set of test tweets.
 
 
